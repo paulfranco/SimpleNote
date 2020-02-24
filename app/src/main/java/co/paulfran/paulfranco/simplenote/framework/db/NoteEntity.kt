@@ -18,7 +18,7 @@ data class NoteEntity(
 ) {
     // Create NoteEntity from a Core/Data/Note
     companion object {
-        fun fromNote(note: Note) = NoteEntity(note.title, note.content, note.creationTime, note.updateTime)
+        fun fromNote(note: Note) = NoteEntity(note.title, note.content, note.creationTime, note.updateTime, note.id)
     }
     // Create a Note from a NoteEntity
     fun toNote() = Note(title, content, creationTime, updateTime, id)
