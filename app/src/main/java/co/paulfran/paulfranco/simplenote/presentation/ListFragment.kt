@@ -13,6 +13,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 
 import co.paulfran.paulfranco.simplenote.R
 import co.paulfran.paulfranco.simplenote.framework.ListViewModel
+import com.google.android.gms.ads.AdRequest
+import com.google.android.gms.ads.AdView
+import com.google.android.gms.ads.MobileAds
 import kotlinx.android.synthetic.main.fragment_list.*
 
 
@@ -25,9 +28,12 @@ class ListFragment : Fragment(), ListAction {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
+
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_list, container, false)
     }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
